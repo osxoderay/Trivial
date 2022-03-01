@@ -43,4 +43,20 @@ public class TrivialTests {
 
         Assertions.assertEquals(expected,actual);
     }
+
+    @Test void al_menos_seis_jugadores() {
+        Game.esJugable();
+        Game juego = new Game();
+        juego.agregar("Levi");
+        juego.agregar("Gojo");
+        juego.agregar("Mikasa");
+        juego.agregar("Sukuna");
+        juego.agregar("Eren");
+        juego.agregar("Armin");
+
+        int expected = 6;
+        int actual = Game.cuantosJugadores();
+
+        Assertions.assertEquals(expected,actual);
+    }
 }

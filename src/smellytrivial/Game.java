@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Game {
-    ArrayList jugadores = new ArrayList();
+    static ArrayList jugadores = new ArrayList();
     int[] posiciones = new int[6];
     int[] monederos = new int[6];
     boolean[] enCasillaCastigo = new boolean[6];
@@ -30,7 +30,7 @@ public class Game {
         return "Pregunta de Música " + index;
     }
 
-    public boolean esJugable() {
+    public static boolean esJugable() {
         return (cuantosJugadores() >= 2);
     }
 
@@ -47,7 +47,7 @@ public class Game {
         return true;
     }
 
-    public int cuantosJugadores() {
+    public static int cuantosJugadores() {
         return jugadores.size();
     }
 

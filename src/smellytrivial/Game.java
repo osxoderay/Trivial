@@ -63,7 +63,10 @@ public class Game {
                 posiciones[jugadorActual] = posiciones[jugadorActual] + puntosDado;
                 if (posiciones[jugadorActual] > 11) posiciones[jugadorActual] = posiciones[jugadorActual] - 12;
 
-                nuevaPosicionJugador();
+                System.out.println("La nueva posición de "
+                        + jugadores.get(jugadorActual)
+                        + " es "
+                        + posiciones[jugadorActual]);
                 System.out.println("La categoría es " + categoriaActual());
                 hacerPregunta();
             } else {
@@ -76,18 +79,14 @@ public class Game {
             posiciones[jugadorActual] = posiciones[jugadorActual] + puntosDado;
             if (posiciones[jugadorActual] > 11) posiciones[jugadorActual] = posiciones[jugadorActual] - 12;
 
-            nuevaPosicionJugador();
+            System.out.println("La nueva posición de "
+                    + jugadores.get(jugadorActual)
+                    + " es "
+                    + posiciones[jugadorActual]);
             System.out.println("La categoría es " + categoriaActual());
             hacerPregunta();
         }
 
-    }
-
-    public String nuevaPosicionJugador() {
-        return "La nueva posición de "
-                + jugadores.get(jugadorActual)
-                + " es "
-                + posiciones[jugadorActual];
     }
 
     private void hacerPregunta() {

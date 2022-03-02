@@ -120,15 +120,13 @@ public class Game {
                         + " monedas doradas.");
 
                 boolean ganador = jugadorHaGanado();
-                jugadorActualIgualJugadoresSize();
+                pasarSiguienteJugador();
 
                 return ganador;
             } else {
-                jugadorActualIgualJugadoresSize();
+                pasarSiguienteJugador();
                 return true;
             }
-
-
 
         } else {
 
@@ -140,7 +138,7 @@ public class Game {
                     + " monedas doradas.");
 
             boolean ganador = jugadorHaGanado();
-            jugadorActualIgualJugadoresSize();
+            pasarSiguienteJugador();
 
             return ganador;
         }
@@ -156,7 +154,6 @@ public class Game {
         return true;
     }
 
-
     private boolean jugadorHaGanado() {
         return !(monederos[jugadorActual] == 6);
     }
@@ -168,8 +165,22 @@ public class Game {
                 + posiciones[jugadorActual];
     }
 
-    public int jugadorActualIgualJugadoresSize() {
-       jugadorActual++;
+    public boolean respuestaCorrecta() {
+        System.out.println("Respuesta correcta!!!!");
+        monederos[jugadorActual]++;
+        System.out.println(jugadores.get(jugadorActual)
+                + " ahora tiene "
+                + monederos[jugadorActual]
+                + " monedas doradas.");
+
+        boolean ganador = jugadorHaGanado();
+
+        return ganador;
+
+    }
+
+    public int pasarSiguienteJugador() {
+        jugadorActual++;
         if (jugadorActual == jugadores.size()) jugadorActual = 0;
         return jugadorActual;
     }

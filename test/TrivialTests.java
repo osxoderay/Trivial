@@ -60,7 +60,6 @@ public class TrivialTests {
         Assertions.assertEquals(expected,actual);
     }
 
-
     @Test void salir_de_la_carcel() {
         Game.esJugable();
         Game juego = new Game();
@@ -74,14 +73,27 @@ public class TrivialTests {
         boolean expected = false;
         boolean actual = juego.comprobarJugadorCarcel();
     }
-    @Test void jugador_actual_igual_size_jugador (){
+    @Test void pasarSiguienteJugador () {
         Game.esJugable();
         Game juego = new Game();
         juego.agregar("Levi");
         juego.agregar("Gojo");
 
+        juego.fueRespuestaCorrecta();
+        juego.pasarSiguienteJugador();
         int expected = 1;
-        int actual = juego.jugadorActualIgualJugadoresSize();
+        int actual = juego.pasarSiguienteJugador();
+
+        Assertions.assertEquals(expected,actual);
+    }
+    @Test void respuesta_correcta (){
+        Game.esJugable();
+        Game juego = new Game();
+        juego.agregar("Levi");
+        juego.agregar("Gojo");
+
+        boolean expected = true;
+        boolean actual= juego.respuestaCorrecta();
 
         Assertions.assertEquals(expected, actual);
 

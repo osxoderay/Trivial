@@ -17,5 +17,5 @@ Por medio de este hacemos que el juego funcione si tiene un maximo de seis jugad
 
 Creamos el test unitario "salir_de_la_carcel"
 Por medio de este hacemos que el jugador pueda salir de la carcel. Para ello creamos dos metodos en la clase "Game":
-"meterJugadorCarcel" el cual sirve para lo que indica el titulo, meter al jugador en la carcel 
+"meterJugadorCarcel" el cual sirve para lo que indica el titulo, meter al jugador en la carcel.  
 "comprobarJugadorCarcel" el cual sirve para comprobar que el jugador esta en la carcel.  

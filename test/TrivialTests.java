@@ -75,8 +75,15 @@ public class TrivialTests {
         boolean actual = juego.comprobarJugadorCarcel();
     }
     @Test void jugador_actual_igual_size_jugador (){
+        Game.esJugable();
         Game juego = new Game();
-        juego.fueRespuestaCorrecta();
+        juego.agregar("Levi");
+        juego.agregar("Gojo");
+
+        int expected = 1;
+        int actual = juego.jugadorActualIgualJugadoresSize();
+
+        Assertions.assertEquals(expected, actual);
 
     }
 }

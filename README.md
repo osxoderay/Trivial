@@ -14,18 +14,22 @@ Creamos el test unitario "al_menos_seis_jugadores"
 Por medio de este hacemos que el juego funcione si tiene un maximo de seis jugadores 
 
 ## Problema 3 
-
 Creamos el test unitario "salir_de_la_carcel"
 Por medio de este hacemos que el jugador pueda salir de la carcel. Para ello creamos dos metodos en la clase "Game":
 
 "meterJugadorCarcel" el cual sirve para lo que indica el titulo, meter al jugador en la carcel 
 "comprobarJugadorCarcel" el cual sirve para comprobar que el jugador esta en la carcel.  
 
+## Problema 5 
+Creamos el test unitario "pasar_Siguiente_Jugador"
+Por medio de este comprobamos que funciona el metodo para poder quitar la duplicidad del código que sirve para pasar al siguiente jugador. Para ello creamos un metodo en la clase "Game":
+"pasarSiguienteJugador" en el cual introducimos las líneas duplicadas.  
+
 ## Problema 6 
 
-Creamos el test unitario "jugador_actual_igual_size_jugador"
+Creamos el test unitario "respuesta_correcta"
 Por medio de este comprobamos que funciona el metodo para poder quitar la duplicidad en el metodo "fueRespuestaCorrecta". 
 Creamos un metodo en la clase "Game":
-"jugadorActualIgualJugadoresSize" en el cual introducimos las lineas duplicadas en "fueRespuestaCorrecta".
+"respuestaCorrecta" en el cual introducimos las lineas duplicadas en "fueRespuestaCorrecta".
 
 

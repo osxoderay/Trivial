@@ -73,7 +73,7 @@ public class TrivialTests {
         boolean expected = false;
         boolean actual = juego.comprobarJugadorCarcel();
     }
-    @Test void pasarSiguienteJugador () {
+    @Test void pasar_Siguiente_Jugador () {
         Game.esJugable();
         Game juego = new Game();
         juego.agregar("Levi");

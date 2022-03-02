@@ -17,7 +17,7 @@ Por medio de este hacemos que el juego funcione si tiene un maximo de seis jugad
 
 Creamos el test unitario "salir_de_la_carcel"
 Por medio de este hacemos que el jugador pueda salir de la carcel. Para ello creamos dos metodos en la clase "Game":
-<<<<<<< HEAD
+
 "meterJugadorCarcel" el cual sirve para lo que indica el titulo, meter al jugador en la carcel 
 "comprobarJugadorCarcel" el cual sirve para comprobar que el jugador esta en la carcel.  
 
@@ -27,7 +27,5 @@ Creamos el test unitario "jugador_actual_igual_size_jugador"
 Por medio de este comprobamos que funciona el metodo para poder quitar la duplicidad en el metodo "fueRespuestaCorrecta". 
 Creamos un metodo en la clase "Game":
 "jugadorActualIgualJugadoresSize" en el cual introducimos las lineas duplicadas en "fueRespuestaCorrecta".
-=======
-"meterJugadorCarcel" el cual sirve para lo que indica el titulo, meter al jugador en la carcel.  
-"comprobarJugadorCarcel" el cual sirve para comprobar que el jugador esta en la carcel.  
->>>>>>> 04c6bf9ad87743fec82c2f86c47577f4e7b6aed4
+
+

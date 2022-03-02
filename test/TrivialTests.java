@@ -59,4 +59,24 @@ public class TrivialTests {
 
         Assertions.assertEquals(expected,actual);
     }
+
+
+    @Test void salir_de_la_carcel() {
+        Game.esJugable();
+        Game juego = new Game();
+
+        juego.agregar("Levi");
+        juego.agregar("Gojo");
+
+        juego.meterJugadorCarcel();
+        juego.tirarDado(3);
+
+        boolean expected = false;
+        boolean actual = juego.comprobarJugadorCarcel();
+    }
+    @Test void jugador_actual_igual_size_jugador (){
+        Game juego = new Game();
+        juego.fueRespuestaCorrecta();
+
+    }
 }

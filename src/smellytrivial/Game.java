@@ -119,13 +119,11 @@ public class Game {
                         + " monedas doradas.");
 
                 boolean ganador = jugadorHaGanado();
-                jugadorActual++;
-                if (jugadorActual == jugadores.size()) jugadorActual = 0;
+                jugadorActualIgualJugadoresSize();
 
                 return ganador;
             } else {
-                jugadorActual++;
-                if (jugadorActual == jugadores.size()) jugadorActual = 0;
+                jugadorActualIgualJugadoresSize();
                 return true;
             }
 
@@ -141,8 +139,7 @@ public class Game {
                     + " monedas doradas.");
 
             boolean ganador = jugadorHaGanado();
-            jugadorActual++;
-            if (jugadorActual == jugadores.size()) jugadorActual = 0;
+            jugadorActualIgualJugadoresSize();
 
             return ganador;
         }
@@ -168,5 +165,20 @@ public class Game {
                 + jugadores.get(jugadorActual)
                 + " es "
                 + posiciones[jugadorActual];
+    }
+
+    public int jugadorActualIgualJugadoresSize() {
+       jugadorActual++;
+        if (jugadorActual == jugadores.size()) jugadorActual = 0;
+        return jugadorActual;
+    }
+
+    public void meterJugadorCarcel() {
+
+        enCasillaCastigo[0] = true;
+    }
+
+    public boolean comprobarJugadorCarcel() {
+        return enCasillaCastigo[0];
     }
 }
